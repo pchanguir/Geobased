@@ -1,0 +1,4 @@
+Lugar para colocar os arquivos sobre como serão partes específicas do site.
+Ex.: Hero section
+
+Arquivos png ou jpeg servem.
