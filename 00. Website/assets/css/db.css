@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main > section{
+    padding: .5cm;
+    border-bottom: 10px solid gray;
+    background-color: white;
+}
+#results > section{
+    padding: .5cm;
+    border-bottom: 1px solid gray;
+}
+main{
+    width: 20cm;
+    background-color: #1c1c1c;
+    padding: 1cm;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+#search-bar{
+    height: 1.5cm;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-bottom: .5cm;
+} 
+#search-bar > input {
+    height: 60%;
+    width: 60%;
+}
+#results{
+    min-height: 10cm;
+    background-color: white;
+}
+#search-input{
+    border: none;
+    border-bottom: 1px solid black;
+}
+button{
+    width: 30%;
+    height: 60%;
+    background-color: #896551;
+    color: white;
+    border: none;
+}
+button > ul{
+    position: absolute;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0;
+    padding: .5cm;
+    display: none;
+    min-width: 20%;
+    color: black;
+    list-style-type: none;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 5cm;
+}
+button > ul > li{
+    padding: 0 .5cm .2cm 0;
+}
+button:hover > ul{
+    display: flex;
+}
+#top-btn{
+    position: absolute;
+    right: 2cm;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    width: 2cm;
+    height: 1cm;
+}
+@media (max-width:768px){
+    #top-btn{
+        bottom: 5cm;
+    }
+    #search-bar > button{
+        display: none;
+    }
+}
+@media (max-width: 425px) {
+    *{
+        word-break: break-all;
+    }
+}
